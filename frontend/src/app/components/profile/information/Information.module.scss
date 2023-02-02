@@ -1,0 +1,86 @@
+.boxUserInformation {
+	display: flex;
+	align-items: flex-start;
+	gap: 1rem;
+	margin-bottom: 1rem;
+	padding: 2rem;
+	position: relative;
+	z-index: 0;
+	max-width: 1280px;
+	margin: 0 auto;
+	.cardUserInformation {
+		background: #fff;
+		flex-grow: 1;
+		margin: 0 auto;
+		.userInformationContent {
+			display: flex;
+			align-items: center;
+			gap: 2rem;
+			.imageSide {
+				.imgRadious {
+					border-radius: 50%;
+					border: 4px solid #fef159;
+					padding: 0.5rem;
+					display: flex;
+					img {
+						border-radius: 100%;
+						width: 100%;
+						max-width: 60px;
+					}
+				}
+			}
+			.imageSidePuntos {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				min-height: 60px;
+				img {
+					&.medal {
+						margin: 0 auto;
+						width: 100%;
+						max-width: 100px;
+					}
+				}
+				.blockDiamond {
+					position: relative;
+					display: flex;
+					gap: 1rem;
+					align-items: center;
+					padding: 0.5rem;
+					overflow: hidden;
+					.background {
+						position: absolute;
+						top: 0;
+						left: 0;
+						// width: 0%;
+						height: 100%;
+						background: #e8eef9;
+						// transition: width ease 5s;
+						// transition-delay: 25s;
+					}
+
+					.diamond {
+						background: #fff;
+						border-radius: 10px;
+						position: relative;
+						display: flex;
+						& img {
+							width: 40px;
+						}
+					}
+
+					.boxTextDiamond {
+						display: flex;
+						flex-direction: column;
+						position: relative;
+						text-align: left;
+						.title {
+							font-weight: bold;
+							font-size: 0.75rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

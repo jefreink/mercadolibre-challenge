@@ -1,0 +1,19 @@
+.contentMain {
+	display: block;
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	.drawer {
+		z-index: 10;
+		&::before {
+			content: '';
+			position: fixed;
+			background: rgba(0, 0, 0, 0.5);
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 1;
+		}
+	}
+}
